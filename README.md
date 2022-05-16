@@ -31,13 +31,13 @@ La procédure de déploiement demande de se rappeler de ce qui a été déployé
 
 - Créer un projet de base de données
 - Lancer une comparaison de shémas avec la BDD existante
-!()[./Screenshots/launch_schemas_compare.png]
-!()[./Screenshots/select_database_for_comparison.png]
-!()[./Screenshots/select_project_for_comparison.png]
-!()[./Screenshots/source_and_destination_for_schemas_comparison.png]
+  ![](./Screenshots/launch_schemas_compare.png)
+  ![](./Screenshots/select_database_for_comparison.png)
+  ![](./Screenshots/select_project_for_comparison.png)
+  ![](./Screenshots/source_and_destination_for_schemas_comparison.png)
 - Mettre à jour le projet de base de données
 - Lancer une comparaison de données:
-!()[./Screenshots/launch_data_comparison.png]
+  ![](./Screenshots/launch_data_comparison.png)
   - Repérer les tables référentiel.
   - Créer des scripts d'insertion de données de référentiel
 - Ajouter un script de post deployment
