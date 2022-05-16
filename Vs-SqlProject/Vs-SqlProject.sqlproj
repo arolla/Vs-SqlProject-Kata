@@ -71,6 +71,7 @@
     <Build Include="dbo\Views\CustomerOrders.sql" />
     <None Include="data\dbo.paymentMethods.sql" />
     <None Include="data\dbo.products.sql" />
+    <Build Include="dbo\Tables\Grades.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data\dbo.categories.sql" />
