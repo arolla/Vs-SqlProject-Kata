@@ -11,7 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{66687279-72B2-49B7-9942-EFB49C5E421D}"
 	ProjectSection(SolutionItems) = preProject
-		Legacy-Deployment\init-db.sql = Legacy-Deployment\init-db.sql
+		Legacy-Deployment\0-init-db.sql = Legacy-Deployment\0-init-db.sql
+		Legacy-Deployment\20220516-AddOrderTotal.sql = Legacy-Deployment\20220516-AddOrderTotal.sql
 	EndProjectSection
 EndProject
 Global
