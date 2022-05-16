@@ -32,7 +32,7 @@ La procédure de déploiement demande de se rappeler de ce qui a été déployé
 
 Il faudra :
 
-[ ] un serveur SQL accessible avec une base de données
-[ ] les credentials pour déployer sur cette base
+- [ ] un serveur SQL accessible avec une base de données
+- [ ] les credentials pour déployer sur cette base
 
 Installer l'action [Azure SQL Deploy](https://github.com/marketplace/actions/azure-sql-deploy).
