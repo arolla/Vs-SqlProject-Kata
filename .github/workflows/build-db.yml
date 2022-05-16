@@ -5,18 +5,24 @@ on:
 
 jobs:
   build:
-    # Should run on Ubuntu
-    runs-on: ubuntu-latest
+    # Need to run on win 2019 to get old MSBuild
+    runs-on: windows-2019
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.1
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v2.1.0
         with:
           dotnet-version: '6.0.x'
+          
+      - name: MSBuild
+        run: msbuild /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true
 
       - name: Restore dependencies
-        run: dotnet restore DbDeploy-Kata/DbDeploy-Kata.sln
+        run: dotnet restore DbDeploy-Kata.sln
       - name: Build
-        run: dotnet build  DbDeploy-Kata/DbDeploy-Kata.sln --no-restore
+        run: dotnet build DbDeploy-Kata.sln --no-restore
