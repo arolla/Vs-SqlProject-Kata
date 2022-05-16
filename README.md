@@ -27,3 +27,12 @@ On a un site de eCommerce qui vend des ordinateurs. On veut ajouter un systéme 
 
 On constate que le versioning git vaut é peu prés un versionning sur systéme de fichier.
 La procédure de déploiement demande de se rappeler de ce qui a été déployé ou pas, et s'assurer que tout est fait dans le bon ordre.
+
+### Créer une action GitHub pour déployer la base
+
+Il faudra :
+
+[ ] un serveur SQL accessible avec une base de données
+[ ] les credentials pour déployer sur cette base
+
+Installer l'action [Azure SQL Deploy](https://github.com/marketplace/actions/azure-sql-deploy).
