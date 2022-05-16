@@ -17,10 +17,14 @@ jobs:
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.1
 
-      #- name: Setup .NET
-      #  uses: actions/setup-dotnet@v2.1.0
-      #  with:
-      #    dotnet-version: '6.0.x'
-          
       - name: MSBuild
-        run: msbuild /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true
+        run: msbuild /p:Configuration=Release /p:DeployOnBuild=true /p:WebPublishMethod=Package
+          /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true
+          /p:PackageLocation="output\\"
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v3
+        with:
+          name: db-package
+          path: output
+
