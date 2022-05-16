@@ -59,6 +59,7 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
+    <Folder Include="data" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Products.sql" />
@@ -68,5 +69,13 @@
     <Build Include="dbo\Tables\Customers.sql" />
     <Build Include="dbo\Tables\Categories.sql" />
     <Build Include="dbo\Views\CustomerOrders.sql" />
+    <None Include="data\dbo.paymentMethods.sql" />
+    <None Include="data\dbo.products.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\dbo.categories.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
