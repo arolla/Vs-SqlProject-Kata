@@ -20,11 +20,10 @@ jobs:
       - name: MSBuild
         run: msbuild /p:Configuration=Release /p:DeployOnBuild=true /p:WebPublishMethod=Package
           /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true
-          /p:PackageLocation="output\\"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: db-package
-          path: output
+          path: "Database12\\bin\\Release"
 
