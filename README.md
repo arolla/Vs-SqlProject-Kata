@@ -2,7 +2,7 @@
 
 ## Prérequis
 
-Avoir un SQL Server installé en local. Edition Developer fonctionne bien : https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+Avoir un SQL Server installé en local. [Edition Developer](https://www.microsoft.com/en-us/sql-server/sql-server-downloads).
 
 ## Scenario
 
@@ -20,8 +20,8 @@ On a un site de eCommerce qui vend des ordinateurs. On veut ajouter un systéme 
   * Il y a un ensemble de scripts SQL versionnés par des timestamp qui servent à déployer la base
   * On veut changer ça et avoir un vrai système moderne
   * Exemple :
-	  * on fait l'init de base avec "0-init-db.sql"
-  	* on applique "20220516-AddOrderTotal.sql"
+    * on fait l'init de base avec "0-init-db.sql"
+    * on applique "20220516-AddOrderTotal.sql"
 
 * Lancer les 2 scripts d'init pour avoir la base de données existante
 
